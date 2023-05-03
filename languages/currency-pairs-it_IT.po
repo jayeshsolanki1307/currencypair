@@ -1,0 +1,47 @@
+#: includes/class-currency-pairs.php:281
+msgid "Start Trading"
+msgstr "Inizia a fare trading"
+
+#: includes/class-currency-pairs.php:365
+msgid "Summary"
+msgstr "Riepilogo"
+
+#: includes/class-currency-pairs.php:369
+msgid "Chart"
+msgstr "Grafico"
+
+#: includes/class-currency-pairs.php:373
+msgid "Historical Data"
+msgstr "Dati storici"
+
+#: includes/class-currency-pairs.php:397
+msgid "Previous Close"
+msgstr "Chiusura Precedente"
+
+#: includes/class-currency-pairs.php:401 includes/class-currency-pairs.php:437
+msgid "Open"
+msgstr "Prezzo apertura"
+
+#: includes/class-currency-pairs.php:405
+msgid "Bid"
+msgstr "Vendi a"
+
+#: includes/class-currency-pairs.php:411
+msgid "Ask"
+msgstr "Compra a"
+
+#: includes/class-currency-pairs.php:436
+msgid "Date"
+msgstr "Data"
+
+#: includes/class-currency-pairs.php:438
+msgid "High"
+msgstr "Prezzo massimo"
+
+#: includes/class-currency-pairs.php:439
+msgid "Low"
+msgstr "Prezzo minimo"
+
+#: includes/class-currency-pairs.php:440
+msgid "Close*"
+msgstr "Chiusura*"

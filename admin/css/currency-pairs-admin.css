@@ -1,0 +1,46 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.currency-pair-settings-page{
+   padding: 5px;
+   margin: 0;
+}
+
+.modal .currency_pair_res.success p{
+   color: #28a745;
+   font-family: sans-serif;
+   font-size: 17px;
+   padding: 15px;
+   font-weight: 500;
+}
+
+.modal .currency_pair_res.error p{
+   color: #ee1010;
+   font-family: sans-serif;
+   font-size: 17px;
+   padding: 15px;
+   font-weight: 500;
+}
+
+.wp-list-table a.copy_btn{
+   color: #fff;
+   cursor: pointer;
+   font-size: 14px!important;
+   font-weight: 600;
+   font-family: monospace;
+   text-decoration: none;
+}
+
+.wp-list-table a.copy_btn:hover{
+   color: #fff;
+}
+#insert_currency_pair_form select{
+   width: 100%;
+   max-width: none;
+}
+
+a#copy_convert{
+   color: #fff;
+   cursor: pointer;
+}

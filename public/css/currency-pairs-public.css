@@ -1,0 +1,1065 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+
+/* page css */
+
+.cp-currency-pairs {
+    width: 100%;
+}
+
+section.module-section-page-main-div {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+section.module-section-page-main-div .currency-state-data {
+    width: 100%;
+    height: 40px;
+}
+
+section.module-section-page-main-div .currency-state-data h2 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #232a31;
+    margin-bottom: -3px;
+}
+
+section.module-section-page-main-div .currency-state-data span.desc-currency-data {
+    font-size: 12px;
+    color: #5b636a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.currency-values-data {
+    margin-top: 13px;
+}
+
+.currency-values-data .currency-inner-div span.currency-first {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #232a31;
+}
+
+.currency-values-data .currency-inner-div span.currency-changing-data {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+    font-weight: 600;
+}
+
+.currency-values-data .currency-inner-div span.currency-changing-data.positive {
+    color: #00873c;
+}
+
+.currency-values-data .currency-inner-div span.currency-changing-data.negative {
+    color: #eb0f29;
+}
+
+.currency-values-data span.lower-currency-desc {
+    font-size: 12px;
+    margin-top: -1px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5b636a;
+}
+
+
+/*
+CSS for the main interaction
+*/
+
+.tabular-chart-div .tabset>input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabular-chart-div .tabset .tab-panel {
+    display: none;
+}
+
+.tabular-chart-div .tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabular-chart-div .tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6),
+.tabular-chart-div .tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabular-chart-div .tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabular-chart-div .tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabular-chart-div .tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5) {
+    display: block;
+}
+
+
+/*
+Styling
+*/
+
+.tabular-chart-div .tabset>label:hover {
+    background-color: #e0f0ff;
+}
+
+.tabular-chart-div .tabset>label {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    border-bottom: 3px solid #0f69ff;
+    border-bottom: 0;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.tabular-chart-div .tabset>input:focus+label,
+.tabular-chart-div .tabset>label:hover {
+    color: #06c;
+}
+
+.tabular-chart-div .tabset>input:checked+label::after,
+.tabular-chart-div .tabset>input:focus+label::after,
+.tabular-chart-div .tabset>label:hover::after {
+    background: #06c;
+}
+
+.tabular-chart-div .tabset>input:checked+label {
+    border-color: #ccc;
+    border-bottom: 3px solid #0f69ff;
+    margin-bottom: -1px;
+}
+
+.tabular-chart-div .tab-panel {
+    padding: 30px 0;
+    border-top: 3px solid #ccc;
+    margin-top: -2px;
+}
+
+.tabular-chart-div .tabset {
+    width: 100%;
+}
+
+section.tabular-chart-div {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+/* table */
+
+.tabs-inner-data table {
+    /*   border: 1px solid #ccc; */
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tabs-inner-data .tab-panel.summary-tab table {
+    width: auto!important;
+    margin-left: 20px;
+    display: flex;
+}
+
+.tabs-inner-data table caption {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    color: #00000090;
+    padding: 15px;
+}
+
+.tabs-inner-data table tr {
+    background-color: #ffffff90;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.second-chart {
+    margin-left: 20px;
+}
+
+.tabs-inner-data .thead {
+    font-size: 0.6875rem;
+    color: #5b636a;
+}
+
+.historical-data-div table {
+    margin: unset unset unset 20px;
+}
+
+.tabs-inner-data .tab-panel.summary-tab table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.tabs-inner-data .tab-panel.summary-tab table tbody tr td:last-child {
+    text-align: right !important;
+}
+
+.tabs-inner-data table td,
+.tabs-inner-data table th {
+    padding: 8px;
+    text-align: left;
+    color: #232a31;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.historical-data-div table tbody.historical-data tr td:first-child,
+.historical-data-div table tr.thead th:first-child {
+    text-align: left;
+}
+
+.historical-data-div table tbody.historical-data tr td {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.tabs-inner-data table th {
+    font-weight: 400;
+    text-align: right;
+    font-size: 0.6875rem;
+    color: #5b636a;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.select2-dropdown {
+    position: unset !important;
+}
+
+@media screen and (max-width: 767px) {
+    .tabs-inner-data .tab-panel.summary-tab table tbody tr {
+        display: flex;
+    }
+    .currency-values-data .currency-inner-div span.currency-first {
+        display: block;
+    }
+    .currency-values-data .currency-inner-div span.currency-changing-data {
+        font-size: 14px;
+    }
+    .tabs-inner-data table {
+        width: 500px;
+        margin-left: 0;
+    }
+    .tabs-inner-data .tab-panel.summary-tab table {
+        width: 100% !important;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .currency-values-data span.lower-currency-desc {
+        display: unset;
+    }
+    .tabs-inner-data .tab-panel.summary-tab table tbody.first-chart,
+    .tabs-inner-data .tab-panel.summary-tab table tbody.second-chart,
+    .tabs-inner-data .tab-panel.summary-tab table tbody.second-chart tr {
+        width: 100% !important;
+    }
+    .tabs-inner-data .tab-panel.summary-tab table tbody.second-chart tr td {
+        width: 100% !important;
+    }
+    .tabs-inner-data .tab-panel.summary-tab table tbody.second-chart {
+        margin-left: 0;
+    }
+    .tabs-inner-data .tab-panel.summary-tab table tbody tr:last-child {
+        border-bottom: 1px solid #ddd;
+    }
+    .historical-data-div table tbody.historical-data tr td,
+    .historical-data-div table tr.thead th {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .historical-data-div table tbody.historical-data tr td,
+    .historical-data-div table tr.thead th {
+        width: 14%;
+    }
+    .historical-data-div table tr.thead th:first-child {
+        width: 18%;
+    }
+    .historical-data-div table tr.thead th:last-child {
+        width: 10%;
+    }
+    .cp-target-link {
+        margin: -4px 1px 8px 14px !important;
+    }
+}
+
+.tabs-inner-data .tab-panel.summary-tab table tbody.first-chart {
+    width: 50%;
+}
+
+.tabs-inner-data .tab-panel.summary-tab table tbody.second-chart {
+    width: 60%;
+}
+
+.tabs-inner-data .tab-panel.summary-tab table tbody.first-chart tr {
+    width: 100%;
+}
+
+.tabs-inner-data .tab-panel.summary-tab table tbody.first-chart tr td {
+    width: 50%;
+}
+
+.tabs-inner-data .tab-panel.summary-tab table tbody.second-chart tr td {
+    width: max-content;
+}
+
+.currency-state-data {
+    display: flex;
+}
+
+.cp-target-link {
+    margin: 0px 1px 0px 14px;
+    background: #28a745;
+    color: #fff !important;
+    border: 1px solid transparent;
+    border-color: #28a745;
+    text-decoration: none !important;
+    padding: 5px;
+    font-family: sans-serif;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.cp-target-link:hover {
+    background: #28a745;
+    color: #fff !important;
+}
+
+
+/* Chart Filter CSS Start */
+
+.chart-range {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.chart-range li {
+    margin-left: 15px;
+    font-weight: 600;
+    list-style: none !important;
+}
+
+a.cp-range {
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+a.cp-range.active {
+    color: #007bff !important;
+}
+
+
+/* Chart Filter CSS End */
+
+
+/* Currency Convert CSS Start */
+
+.selectRow {
+    display: block;
+    padding: 20px;
+}
+
+.select2-container {
+    width: 200px;
+}
+
+.select2-drop-active {
+    margin-top: -25px;
+}
+
+
+/* Currency Convert CSS End */
+
+
+/* added by shubham  */
+
+.cp-convert-currency {
+    width: 100%;
+    max-width: 100% !important;
+}
+
+form#convert_currency_form .form-row .form-group label {
+    width: 100%;
+    display: block;
+    color: rgb(20, 30, 55);
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+form#convert_currency_form .form-row .form-group .amount-input {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form#convert_currency_form .form-row .form-group .amount-input input#amount:focus,
+form#convert_currency_form .form-row .form-group .amount-input input#amount:focus-within {
+    outline: none !important;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+form#convert_currency_form .form-row .form-group .amount-input input#amount {
+    outline: none;
+    padding-left: 5px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(20, 30, 55);
+    background: none;
+    width: 70%;
+    max-width: 100%;
+    height: 50px;
+    font-size: 17px;
+    color: rgb(20, 30, 55);
+    font-family: Inter, sans-serif;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+form#convert_currency_form .form-row .form-group .amount-input {
+    padding-left: 9px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    box-shadow: rgb(0 17 51 / 5%) 0 3px 15px;
+    color: rgb(20, 30, 55);
+    background: none;
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    font-size: 17px;
+    color: rgb(20, 30, 55);
+    font-family: Inter, sans-serif;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+form#convert_currency_form .form-row .form-group .amount-input span.currency-symbol-input {
+    font-size: 16px;
+    color: rgb(20, 30, 55);
+    padding-top: 13px;
+    width: auto;
+}
+
+form#convert_currency_form .form-row .form-group .selectRow {
+    padding: 0;
+}
+
+form#convert_currency_form .form-row .form-group .selectRow select#fromCurrency {
+    width: 100%;
+    display: none;
+}
+
+form#convert_currency_form .form-row .form-group .selectRow span.select2.select2-container.select2-container--default {
+    width: 100% !important;
+    display: block;
+    max-width: 100% !important;
+    width: 98%;
+    height: 100%;
+    box-shadow: none;
+    padding: 6px 6px 6px 10px;
+    cursor: pointer;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    height: 50px;
+    box-shadow: rgb(0 17 51 / 5%) 0 3px 15px;
+    font-family: Inter, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+form#convert_currency_form .form-row .form-group .selectRow span.select2.select2-container.select2-container--default.select2-container--below span.selection {
+    width: 100%;
+}
+
+span.select2-container.select2-container--default span.select2-dropdown {
+    width: 100% !important;
+    display: block;
+}
+
+span.select2-container.select2-container--default {
+    width: 24%!important;
+}
+
+span.select2-container.select2-container--default input.select2-search__field {
+    width: 100% !important;
+    display: block;
+    max-width: 100% !important;
+    box-shadow: none;
+    padding: 6px 6px 6px 10px;
+    cursor: pointer;
+    background: #fff !important;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    height: 50px;
+    box-shadow: rgb(0 17 51 / 5%) 0 3px 15px;
+    font-family: Inter, sans-serif;
+    display: flex;
+    text-transform: uppercase;
+}
+
+span.select2-container.select2-container--default span.select2-dropdown span.select2-results {
+    background: white;
+    width: 100%;
+    display: block;
+    box-shadow: rgb(0 17 51 / 5%) 0 3px 15px;
+    position: relative;
+    top: 7px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+span.select2-container.select2-container--default span.select2-dropdown span.select2-results ul#select2-fromCurrency-results,
+span.select2-container.select2-container--default span.select2-dropdown span.select2-results ul#select2-toCurrency-results {
+    padding: 0;
+    list-style: none;
+    padding-left: 13px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+span.select2-container.select2-container--default span.select2-dropdown span.select2-results ul#select2-fromCurrency-results li,
+span.select2-container.select2-container--default span.select2-dropdown span.select2-results ul#select2-toCurrency-results li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: Inter, sans-serif;
+}
+
+form#convert_currency_form .form-row .form-group.swap-element .swap-currency {
+    width: 50px;
+    display: flex;
+    height: 50px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 100%;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+form#convert_currency_form .form-row .form-group.swap-element {
+    margin-bottom: 0;
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+@media screen and (min-width:992px) {
+    form#convert_currency_form .form-row .form-group.swap-element {
+        max-width: 60px;
+    }
+}
+
+form#convert_currency_form .form-row .form-group .selectRow select#toCurrency {
+    display: none;
+}
+
+.main-desc-data-analytics {
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+}
+
+.main-desc-data-analytics p.inserted-amount {
+    font-size: 18px;
+    color: rgb(92, 102, 123);
+    font-weight: 600;
+    margin-bottom: 20px;
+    max-width: 100%;
+    line-height: 20px;
+    font-family: Inter, sans-serif;
+}
+
+.main-desc-data-analytics p.rate-of-conversion {
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(46, 60, 87);
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+.main-desc-data-analytics p.rate-of-conversion span.faded-digits {
+    color: rgb(161, 166, 176);
+}
+
+.main-desc-data-analytics .unit-rates-main {
+    width: 100%;
+    height: auto;
+}
+
+.main-desc-data-analytics .unit-rates-main p {
+    margin-bottom: 0;
+    color: rgb(92, 102, 123);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (max-width:767px) {
+    span.select2-container.select2-container--default {
+        width: 80%!important;
+    }
+    form#convert_currency_form .form-row .form-group.swap-element {
+        justify-content: inherit;
+        margin-bottom: 16px;
+    }
+    form#convert_currency_form .form-row .form-group.swap-element .swap-currency {
+        transform: rotate(90deg);
+    }
+    .main-desc-data-analytics p.rate-of-conversion {
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+    .main-desc-data-analytics p.inserted-amount {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+}
+
+.dropdown-caret {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.dropdown-caret span.open_fromCurrency,
+.dropdown-caret span.open_toCurrency {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 20px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.dropdown-caret span.open_fromCurrency img,
+.dropdown-caret span.open_toCurrency img {
+    width: 100%;
+    height: auto;
+}
+
+span#select2-fromCurrency-container:focus-visible,
+span.select2-selection.select2-selection--single:focus-visible {
+    outline: none;
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+.cc-loader-image {
+    text-align: center;
+}
+
+.cc-loader-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.tabular-chart-div .tab-panel table {
+    border: none;
+}
+
+.tabs-inner-data .tab-panel.summary-tab table tbody td {
+    border: none;
+}
+
+
+/* Historical Data Table CSS Start */
+
+section#historical-data {
+    width: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* @media screen and (max-width:991px) { */
+
+section#historical-data::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+section#historical-data::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+section#historical-data::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+section#historical-data::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+section#historical-data::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+/* } */
+
+
+/* Historical Data Table CSS End */
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .tabs-inner-data .tab-panel.summary-tab table {
+        width: 80% !important;
+        margin-left: 20px;
+        display: flex;
+    }
+    span.select2-container.select2-container--default {
+        width: 300px!important;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .tabular-chart-div .tabset>label {
+        padding: 15px 4px 15px !important;
+    }
+}
+
+.historical-data-div table {
+    border: none !important;
+}
+
+.historical-data-div table thead {
+    border: none !important;
+}
+
+tbody.historical-data {
+    border: 0 !important;
+}
+
+.historical-data-div table tbody.historical-data tr td {
+    border: 0;
+}
+
+.historical-data-div table thead tr.thead th {
+    border-right: 0;
+}
+
+
+/* @media screen and (min-width:992px) {
+    .logged-in.admin-bar span.select2-container.select2-container--default.select2-container--open {
+        top: 395px !important;
+    }
+} */
+
+
+/* currenncy pairs new css on 9-3-2023 */
+
+.form-group.input-adjust-div {
+    min-width: 300px;
+    width: fit-content;
+}
+
+.form-group.input-adjust-div:first-of-type {
+    margin-right: 9px;
+}
+
+.form-group.input-adjust-div:first-of-type .amount-input input#amount {
+    padding: 5px;
+}
+
+@media screen and (min-width:1150px) and (max-width:1230px) {
+    span.select2-container.select2-container--default {
+        width: 30%!important;
+    }
+    .form-group.input-adjust-div {
+        min-width: 100%;
+        width: 100%;
+        margin-right: 0;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1149px) {
+    span.select2-container.select2-container--default {
+        width: 30%!important;
+    }
+    .form-group.input-adjust-div {
+        min-width: auto;
+        width: 100%;
+        margin-right: 0;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:790px) and (max-width:991px) {
+    span.select2-container.select2-container--default {
+        width: 30%!important;
+    }
+    .form-group.input-adjust-div {
+        min-width: auto;
+        width: 100%;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+    }
+    .form-group.swap-element {
+        width: 60px !important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:790px) {
+    span.select2-container.select2-container--default {
+        width: 58%!important;
+    }
+    .form-group.input-adjust-div {
+        min-width: auto;
+        width: 100%;
+    }
+    /* .form-group.input-adjust-div {
+        min-width: auto;
+        width: 29%;
+    } */
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+    }
+    .form-group.swap-element {
+        width: 60px !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .form-group.input-adjust-div {
+        min-width: 31%;
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+        flex-direction: column
+    }
+}
+
+@media screen and (max-width:1230px) {
+    .wp-block-group.wp-container-1 {
+        flex-wrap: wrap !important;
+    }
+}
+
+
+/* newly addded css 14/03/202 */
+
+.form-group.input-adjust-div {
+    min-width: 279px;
+    width: fit-content;
+}
+
+.form-group.input-adjust-div:first-of-type {
+    margin-right: 9px;
+}
+
+.form-group.input-adjust-div:first-of-type .amount-input input#amount {
+    padding: 5px;
+}
+
+@media screen and (min-width:1150px) and (max-width:1230px) {
+    .form-group.input-adjust-div {
+        min-width: 100%;
+        width: 100%;
+        margin-right: 0;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1149px) {
+    .form-group.input-adjust-div {
+        min-width: auto;
+        width: 100%;
+        margin-right: 0;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:790px) and (max-width:991px) {
+    .form-group.input-adjust-div {
+        min-width: auto;
+        width: 100%;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+    }
+    .form-group.swap-element {
+        width: 60px !important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:790px) {
+    .form-group.input-adjust-div {
+        min-width: auto;
+        width: 100%;
+    }
+    /* .form-group.input-adjust-div {
+        min-width: auto;
+        width: 29%;
+    } */
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+    }
+    .form-group.swap-element {
+        width: 60px !important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:800px) {
+    body .is-layout-flex {
+        flex-wrap: wrap !important;
+        max-width: 100% !important;
+        width: 100%;
+    }
+    .form-group.input-adjust-div {
+        min-width: 31%;
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+        flex-direction: column
+    }
+    .wp-block-group.wp-container-7 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    body .is-layout-flex {
+        flex-wrap: wrap !important;
+        max-width: 100% !important;
+        width: 100%;
+    }
+    .form-group.input-adjust-div {
+        min-width: 31%;
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+        flex-direction: column
+    }
+    .wp-block-group.wp-container-7 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    body .is-layout-flex {
+        flex-wrap: wrap !important;
+        max-width: 100% !important;
+        width: 100%;
+    }
+    .form-group.input-adjust-div {
+        min-width: 31%;
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .entry-content.clear .is-nowrap.is-layout-flex.wp-container-1.wp-block-group {
+        padding: 0;
+        flex-direction: column
+    }
+    .wp-block-group.wp-container-7 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+.tabular-chart-div .tabset>label {
+    margin-bottom: 0px !important;
+}
+
+span.select2-container.select2-container--default span.select2-dropdown span.select2-results ul#select2-fromCurrency-results,
+span.select2-container.select2-container--default span.select2-dropdown span.select2-results ul#select2-toCurrency-results {
+    margin-left: 5px;
+}
+
+@media screen and (max-width:1230px) {
+    .wp-block-group.wp-container-1 {
+        flex-wrap: wrap !important;
+    }
+}
+
+.wp-block-group.wp-container-7 {
+    width: 100% !important;
+    max-width: 82% !important;
+}
+
+form#convert_currency_form .form-row .form-group .selectRow span.select2.select2-container.select2-container--default span.selection {
+    width: 100%;
+}
+
+form#convert_currency_form .form-row .form-group .selectRow span.select2.select2-container.select2-container--default span.selection span.select2-selection.select2-selection--single {
+    background: none;
+}
+
+@media screen and (max-width:767px) {
+    form#convert_currency_form {
+        max-width: 100%;
+        padding: 0;
+    }
+    .tabs-inner-data .tab-panel.summary-tab table tbody.first-chart tr td {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .is-layout-flex {
+        width: 100%;
+        max-width: 100% !important;
+        margin: auto;
+    }
+    .entry-content {
+        width: 92%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .form-group.input-adjust-div:first-of-type {
+        margin-right: 0px !important;
+    }
+}
+
+
+/* @media screen and (min-width:768px) and (max-width:991px) {
+    .tabs-inner-data .tab-panel.summary-tab table tbody.first-chart tr {
+        width: 100% !important;
+    }
+    .tabs-inner-data .tab-panel.summary-tab table tbody.first-chart,
+    .tabs-inner-data .tab-panel.summary-tab table tbody.second-chart {
+        width: 100% !important;
+    }
+    .tabs-inner-data .tab-panel.summary-tab table {
+        flex-direction: column;
+    }
+} */
